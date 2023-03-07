@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/hintTextView"
+        android:layout_width="237dp"
+        android:layout_height="49dp"
+        android:text="@string/to_solve_square_equation_enter_a_b_c_and_press_solve"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/x1x2Solver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/d"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bEdit" />
+
+    <TextView
+        android:id="@+id/x1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="@string/x1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/aEdit" />
+
+    <TextView
+        android:id="@+id/x2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="@string/x2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cEdit" />
+
+    <ImageView
+        android:id="@+id/equationImageView"
+        android:layout_width="364dp"
+        android:layout_height="222dp"
+        android:contentDescription="@string/equationimage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371"
+        app:srcCompat="@drawable/sqare_equation" />
+
+    <EditText
+        android:id="@+id/aEdit"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:hint="@string/a"
+        android:inputType="numberDecimal"
+        android:textColorHint="#78909C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/bEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/equationImageView" />
+
+    <EditText
+        android:id="@+id/bEdit"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:hint="@string/b"
+        android:inputType="numberDecimal"
+        android:textColorHint="#78909C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/equationImageView"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/cEdit"
+        android:layout_width="63dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:hint="@string/c"
+        android:inputType="numberDecimal"
+        android:textColorHint="#78909C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bEdit"
+        app:layout_constraintTop_toBottomOf="@+id/equationImageView" />
+
+    <Button
+        android:id="@+id/x1x2Solver"
+        android:layout_width="265dp"
+        android:layout_height="52dp"
+        android:text="@string/solve"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/equationImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

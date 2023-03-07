@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SquareEquationSolving</string>
+    <string name="solve">Solve</string>
+    <string name="x1">X1=</string>
+    <string name="d">D=</string>
+    <string name="x2">X2=</string>
+    <string name="a">a</string>
+    <string name="to_solve_square_equation_enter_a_b_c_and_press_solve">To solve square equation enter a,b,c and press SOLVE</string>
+    <string name="b">b</string>
+    <string name="c">c</string>
+    <string name="equationimage">equationImage</string>
+</resources>
